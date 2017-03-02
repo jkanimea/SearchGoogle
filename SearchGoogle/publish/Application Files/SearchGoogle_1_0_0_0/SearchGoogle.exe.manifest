@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="SearchGoogle.exe" version="1.0.0.0" publicKeyToken="003e7304e2d92083" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="SearchGoogle" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="SearchGoogle.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Google.Apis.dll" size="66560">
+      <assemblyIdentity name="Google.Apis" version="1.15.0.0" publicKeyToken="4B01FA6E34DB77AB" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Gl2eBqnQz0Z0J+rjn5i86zTiRpgg9Vxz5VA5EOGq2hk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Google.Apis.Core.dll" size="50688">
+      <assemblyIdentity name="Google.Apis.Core" version="1.15.0.0" publicKeyToken="4B01FA6E34DB77AB" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>VlBC+cVEbgrreTFa6xZ2Ghyif/Gwzjke0Je6X0b3PY4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Google.Apis.Customsearch.v1.dll" size="35328">
+      <assemblyIdentity name="Google.Apis.Customsearch.v1" version="1.15.0.466" publicKeyToken="4B01FA6E34DB77AB" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>2PQOrqEZKw+3ewVYpTfcDJ5cYj7Ov9r/sdut8lIx6IQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Google.Apis.PlatformServices.dll" size="7680">
+      <assemblyIdentity name="Google.Apis.PlatformServices" version="1.15.0.0" publicKeyToken="4B01FA6E34DB77AB" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>3fEqwm48kCDe2KFnqaUJvVgRJfJeLrGezYbeKIBNw2E=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="log4net.dll" size="301056">
+      <assemblyIdentity name="log4net" version="1.2.13.0" publicKeyToken="669E0DDF0BB1AA2A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>zm7k/ceDpb+QXyQBeKyW6ut+3iL/4GoGuhec0aBEK9M=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Newtonsoft.Json.dll" size="520192">
+      <assemblyIdentity name="Newtonsoft.Json" version="7.0.0.0" publicKeyToken="30AD4FE6B2A6AEED" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>nsosXtGHteExnDWaq/g4KZITHv4YVLiZwjqT/iJ0luM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SearchGoogle.exe" size="9176">
+      <assemblyIdentity name="SearchGoogle" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>No9WWg2S9y4omTrSxHuPslrDWMdayazjwGFx+HcODDY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Zlib.Portable.dll" size="81920">
+      <assemblyIdentity name="Zlib.Portable" version="1.11.0.0" publicKeyToken="431CBA815F6A8B5B" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>EhdRwdjYy8UnDApgbbyl1xTULhirPmtXf7uNKkpVacU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="SearchGoogle.exe.config" size="187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ji8aT6+d4QyGsLkWKNdTYyE7mNtRXIN9y+Xmyl/UOJU=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=jkanimea-PC\jkanimea" issuerKeyHash="f28b19cbf69671d01b1a185dddb25aa6c437e7f1" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>rKYczlbVv56vj217n2RqJ3QTRz0uBuFLxzu8lqsJ/ho=</DigestValue></Reference></SignedInfo><SignatureValue>A4Ptm/p6NRm+ByWCCSlHeBHEY+o1yyDoQij4Mz8s0OKauU8Ggl+AhwNOQuWyEha+U97eUkI+4VW0mbQP5JQMCTIikYQgV9yp3StHO8j1TqsHIx+JWpK09S/6xJNK6fPuk0PlQwoc0EvQGiRXrmIiMRHU4h+JpC7cryrwObxe7P8=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>mMRv0G1JlrjGPOD4TUJJDLP6afTxGPoZqrDkh9wkMDpBpUIVTOQEo+ImO4ahE+QRkU5av5m5xfA2/ooOctFI/ilMVWayjPY98UtRF7tLgcGmSwasKywUOo3feMNweYM52wKUoydzMwV6WniywT34HGj0gUwqobNCbQCzWWVIXyM=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="1afe09ab96bc3bc74be1062e3d471374276a649f7b6d8faf9ebfd556ce1ca6ac" Description="" Url=""><as:assemblyIdentity name="SearchGoogle.exe" version="1.0.0.0" publicKeyToken="003e7304e2d92083" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=jkanimea-PC\jkanimea</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>3mU4XwPjWIcZBixIsGTVlwKa16Mh3Gag7apecwkRQr4=</DigestValue></Reference></SignedInfo><SignatureValue>O69wg4DPDA2d/9eVJXjRl4qNEry5gFpmiHjdkKqLdGydB5PKCzDC0xD9DPbjStGHtFB1rrW1QXJmfIInSN1NyGRXTFy1rHA/w5pK/+tQqFXr0xpra1YC+BnFupR1n9C+Ux1ij0HgQGeCVjZLwphJkF7Jm5VM4FRkl/S7lbTht5I=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>mMRv0G1JlrjGPOD4TUJJDLP6afTxGPoZqrDkh9wkMDpBpUIVTOQEo+ImO4ahE+QRkU5av5m5xfA2/ooOctFI/ilMVWayjPY98UtRF7tLgcGmSwasKywUOo3feMNweYM52wKUoydzMwV6WniywT34HGj0gUwqobNCbQCzWWVIXyM=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB6TCCAVKgAwIBAgIQVhRp4bVR6b9NOb+2uXSj/TANBgkqhkiG9w0BAQsFADAzMTEwLwYDVQQDHigAagBrAGEAbgBpAG0AZQBhAC0AUABDAFwAagBrAGEAbgBpAG0AZQBhMB4XDTE2MDgyMjExNDI1MVoXDTE3MDgyMjE3NDI1MVowMzExMC8GA1UEAx4oAGoAawBhAG4AaQBtAGUAYQAtAFAAQwBcAGoAawBhAG4AaQBtAGUAYTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAmMRv0G1JlrjGPOD4TUJJDLP6afTxGPoZqrDkh9wkMDpBpUIVTOQEo+ImO4ahE+QRkU5av5m5xfA2/ooOctFI/ilMVWayjPY98UtRF7tLgcGmSwasKywUOo3feMNweYM52wKUoydzMwV6WniywT34HGj0gUwqobNCbQCzWWVIXyMCAwEAATANBgkqhkiG9w0BAQsFAAOBgQALLvGQ5L/BiAqUQDNSU2lXOm1Cxj1arXErFnvjbDsVQALBtMKBpCZgxiO0cI5QHberkcZk/3zdKLAaCsb0YgEKRczk1GXArl+rcloCe/g/EsrEav1wk/g1nA0ev4N1lamdCyE6wEbkD9QuiOWEjrKmA82y+S9M4DSFoavchgZDcQ==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
